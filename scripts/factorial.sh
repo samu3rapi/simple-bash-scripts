@@ -1,9 +1,9 @@
-#!/usr/bin/env bash
-echo -n "Enter The Number: "
-read -r a
-fact=1
-while [ "$a" -ne 0 ]; do
-	fact=$((fact * a))
-	a=$((a - 1))
-done
-echo $fact
+#!/bin/bash
+factorial() {
+    n=$1
+    result=1
+    for ((i=2; i<=n; i++)); do
+        result=$((result * i))
+    done
+    echo $result
+}
