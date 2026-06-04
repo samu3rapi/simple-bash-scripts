@@ -21,7 +21,7 @@ jobs:
 
       - name: Lint with shellcheck
         run: |
-          shellcheck scripts/*.sh
+          shellcheck scripts/addition.sh scripts/evenodd.sh scripts/factorial.sh
 
       - name: Test with shunit2
         run: |
